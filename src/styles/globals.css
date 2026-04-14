@@ -1,0 +1,97 @@
+@import './tokens.css';
+
+* {
+	box-sizing: border-box;
+}
+
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: var(--color-bg);
+	color: var(--color-text-primary);
+	font-family: var(--font-body);
+	font-size: 16px;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	scrollbar-width: thin;
+	scrollbar-color: var(--color-border) transparent;
+}
+
+html,
+body,
+#root {
+	min-height: 100%;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: var(--font-display);
+	letter-spacing: -0.01em;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+::selection {
+	background: var(--color-accent);
+	color: #000;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-border);
+	border-radius: var(--radius-md);
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+@media (max-width: 768px) {
+	.form-page-card {
+		border: none;
+		padding: var(--space-6);
+	}
+
+	.vehicle-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 640px) {
+	body {
+		font-size: 15px;
+	}
+
+	.form-page-card {
+		padding: var(--space-5);
+	}
+
+	.listing-controls .listing-search {
+		min-width: 0;
+	}
+}

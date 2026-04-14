@@ -1,0 +1,158 @@
+.toolbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--space-3);
+	margin-bottom: var(--space-6);
+	flex-wrap: wrap;
+}
+
+.helper {
+	margin: 0;
+	color: var(--color-text-secondary);
+}
+
+.clearButton {
+	height: 42px;
+	padding: 0 var(--space-4);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	background: var(--color-surface);
+	color: var(--color-text-primary);
+	cursor: pointer;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: var(--space-5);
+}
+
+.card {
+	position: relative;
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-lg);
+	overflow: hidden;
+}
+
+.removeButton {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid var(--color-border);
+	border-radius: 999px;
+	background: rgba(13, 13, 15, 0.78);
+	color: var(--color-text-primary);
+	font-size: 18px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.media {
+	height: 190px;
+	background: var(--color-surface-raised);
+}
+
+.media img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.imagePlaceholder {
+	height: 100%;
+	display: grid;
+	place-items: center;
+	color: var(--color-text-muted);
+}
+
+.content {
+	padding: var(--space-4);
+}
+
+.content h3 {
+	margin: 0;
+	font-family: var(--font-display);
+	font-size: 24px;
+	line-height: 1.1;
+}
+
+.price {
+	margin: var(--space-3) 0;
+	font-family: var(--font-display);
+	font-size: 26px;
+	color: var(--color-accent);
+}
+
+.specs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	gap: var(--space-2);
+}
+
+.specs li {
+	display: flex;
+	justify-content: space-between;
+	gap: var(--space-3);
+	font-size: 14px;
+}
+
+.specs span {
+	color: var(--color-text-muted);
+}
+
+.specs strong {
+	font-weight: 500;
+}
+
+.emptyState {
+	padding: var(--space-12) 0;
+	text-align: center;
+	display: grid;
+	gap: var(--space-4);
+	place-items: center;
+}
+
+.backLink {
+	height: 44px;
+	display: inline-flex;
+	align-items: center;
+	padding: 0 var(--space-4);
+	border-radius: var(--radius-md);
+	background: var(--color-accent);
+	color: #000;
+	font-weight: 600;
+}
+
+@media (max-width: 768px) {
+	.toolbar {
+		align-items: stretch;
+	}
+
+	.clearButton {
+		width: 100%;
+	}
+
+	.grid {
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	}
+
+	.media {
+		height: 170px;
+	}
+
+	.content h3 {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 480px) {
+	.price {
+		font-size: 24px;
+	}
+}

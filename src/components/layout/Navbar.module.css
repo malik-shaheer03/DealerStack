@@ -1,0 +1,262 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 64px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), backdrop-filter var(--transition-fast);
+}
+
+.scrolled {
+	background: rgba(24, 24, 28, 0.78);
+	border-bottom-color: rgba(46, 46, 56, 0.9);
+	backdrop-filter: blur(12px);
+}
+
+.inner {
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 var(--space-8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.logoMark {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.wordmarkWrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  min-width: 0;
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.wordmarkTag {
+  margin-top: 3px;
+  color: var(--color-text-muted);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.menuButton {
+  display: none;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-raised);
+  color: var(--color-text-primary);
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menuIconLine {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.menuButton {
+  position: relative;
+}
+
+.menuIconLine:nth-child(1) {
+  transform: translateY(-5px);
+}
+
+.menuIconLine:nth-child(2) {
+  transform: translateY(0);
+}
+
+.menuIconLine:nth-child(3) {
+  transform: translateY(5px);
+}
+
+.menuIconLineTopOpen {
+  transform: translateY(0) rotate(45deg) !important;
+}
+
+.menuIconLineMiddleOpen {
+  opacity: 0;
+}
+
+.menuIconLineBottomOpen {
+  transform: translateY(0) rotate(-45deg) !important;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  height: 100%;
+}
+
+.link {
+  position: relative;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+  border-bottom: 2px solid transparent;
+}
+
+.link:hover {
+  color: var(--color-text-primary);
+}
+
+.active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+@media (max-width: 900px) {
+  .inner {
+    padding: 0 var(--space-6);
+  }
+
+  .nav {
+    gap: var(--space-4);
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    height: auto;
+  }
+
+  .inner {
+    min-height: 64px;
+    height: auto;
+    align-items: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    padding: var(--space-3) var(--space-4);
+  }
+
+  .wordmark {
+    font-size: 24px;
+  }
+
+  .wordmarkTag {
+    font-size: 10px;
+  }
+
+  .brand {
+    margin-right: auto;
+  }
+
+  .logoMark {
+    width: 38px;
+    height: 38px;
+  }
+
+  .menuButton {
+    display: inline-flex;
+  }
+
+  .nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-1);
+    margin-top: 0;
+    padding: 0 var(--space-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface-raised);
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-8px) scaleY(0.98);
+    transform-origin: top;
+    pointer-events: none;
+    border-color: transparent;
+    transition:
+      max-height 260ms ease,
+      opacity 220ms ease,
+      transform 260ms ease,
+      margin-top 220ms ease,
+      padding 220ms ease,
+      border-color 220ms ease;
+  }
+
+  .navOpen {
+    margin-top: var(--space-2);
+    padding: var(--space-2);
+    max-height: 320px;
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    pointer-events: auto;
+    border-color: var(--color-border);
+  }
+
+  .link {
+    height: 40px;
+    padding: 0 var(--space-3);
+    border-bottom: none;
+    border-radius: var(--radius-sm);
+  }
+
+  .link:hover {
+    background: var(--color-surface);
+  }
+
+  .active {
+    border-bottom: none;
+    background: rgba(232, 201, 125, 0.12);
+  }
+}
+
+@media (max-width: 420px) {
+  .wordmark {
+    font-size: 20px;
+    letter-spacing: 0.05em;
+  }
+
+  .wordmarkTag {
+    display: none;
+  }
+
+  .logoMark {
+    width: 34px;
+    height: 34px;
+  }
+}

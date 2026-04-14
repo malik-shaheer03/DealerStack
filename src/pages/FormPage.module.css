@@ -1,0 +1,155 @@
+.formCard {
+	max-width: 520px;
+	margin: 0 auto;
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-xl);
+	padding: var(--space-10);
+	box-shadow: var(--shadow-card);
+}
+
+.formStack {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-5);
+}
+
+.submitButton {
+	width: 100%;
+	height: 52px;
+	margin-top: var(--space-6);
+	background: var(--color-accent);
+	color: #000;
+	font-family: var(--font-display);
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	border-radius: var(--radius-md);
+	border: none;
+	cursor: pointer;
+	transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.submitButton:disabled {
+	cursor: wait;
+	opacity: 0.92;
+}
+
+.submitButton:hover {
+	background: var(--color-accent-dim);
+}
+
+.submitButton:active {
+	transform: translateY(1px);
+}
+
+.buttonLoading {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.buttonSpinner {
+	width: 14px;
+	height: 14px;
+	border: 2px solid rgba(0, 0, 0, 0.28);
+	border-top-color: #000;
+	border-radius: 50%;
+	animation: buttonSpin 700ms linear infinite;
+}
+
+.successWrap {
+	min-height: 58vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: var(--space-4);
+}
+
+.successIcon {
+	width: 72px;
+	height: 72px;
+	color: var(--color-success);
+}
+
+.successTitle {
+	margin: 0;
+	font-family: var(--font-display);
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	color: var(--color-text-primary);
+}
+
+.successText {
+	margin: 0;
+	color: var(--color-text-secondary);
+}
+
+.secondaryAction {
+	margin-top: var(--space-2);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	padding: 10px 20px;
+	background: var(--color-surface);
+	color: var(--color-text-primary);
+	font-family: var(--font-body);
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.secondaryAction:hover {
+	border-color: var(--color-accent);
+	color: var(--color-accent);
+}
+
+@keyframes buttonSpin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (max-width: 768px) {
+	.formCard {
+		padding: var(--space-8);
+	}
+
+	.successWrap {
+		min-height: 52vh;
+	}
+
+	.successTitle {
+		font-size: 34px;
+	}
+}
+
+@media (max-width: 480px) {
+	.formCard {
+		padding: var(--space-6);
+		border-radius: var(--radius-lg);
+	}
+
+	.submitButton {
+		height: 48px;
+		font-size: 16px;
+	}
+
+	.successIcon {
+		width: 64px;
+		height: 64px;
+	}
+
+	.successTitle {
+		font-size: 30px;
+	}
+}

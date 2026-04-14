@@ -1,0 +1,74 @@
+.wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.icon {
+	position: absolute;
+	left: 16px;
+	top: 50%;
+	width: 18px;
+	height: 18px;
+	transform: translateY(-50%);
+	color: var(--color-text-muted);
+	pointer-events: none;
+}
+
+.input {
+	width: 100%;
+	height: 48px;
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	padding: 0 var(--space-4) 0 48px;
+	color: var(--color-text-primary);
+	font-family: var(--font-body);
+	font-size: 15px;
+	transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.input::placeholder {
+	color: var(--color-text-muted);
+}
+
+.input:focus {
+	border-color: var(--color-accent);
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(232, 201, 125, 0.12);
+}
+
+.clearButton {
+	position: absolute;
+	right: 14px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 24px;
+	height: 24px;
+	border: none;
+	border-radius: var(--radius-sm);
+	background: transparent;
+	color: var(--color-text-muted);
+	font-size: 18px;
+	line-height: 1;
+	cursor: pointer;
+	transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.clearButton:hover {
+	color: var(--color-text-primary);
+	background: var(--color-surface-raised);
+}
+
+@media (max-width: 480px) {
+	.input {
+		height: 44px;
+		font-size: 14px;
+		padding-right: 42px;
+	}
+
+	.icon {
+		left: 14px;
+		width: 16px;
+		height: 16px;
+	}
+}

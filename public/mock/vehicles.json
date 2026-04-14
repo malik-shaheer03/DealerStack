@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "make": "BMW",
+    "model": "M5 Competition",
+    "year": 2024,
+    "price": 72000,
+    "mileage": 3800,
+    "color": "Obsidian Black",
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/BMW_M5_(G90)_IMG_3271.jpg",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/BMW_M5_(G90)_IMG_3271.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/BMW_M5_(G99)_DSC_7967.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/BMW_M5_(G99)_DSC_7966.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/BMW_M5_(G90)_Auto_Zuerich_2024_DSC_6967.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "make": "Toyota",
+    "model": "Crown Platinum",
+    "year": 2024,
+    "price": 48900,
+    "mileage": 4700,
+    "color": "Pearl White",
+    "fuel_type": "Hybrid",
+    "transmission": "Automatic",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Toyota_Crown_Sedan_FCEV.jpg",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Toyota_Crown_Sedan_FCEV.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Toyota_Crown_Sedan_FCEV.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Toyota_Crown_Sedan_FCEV.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Toyota_Crown_Sedan_FCEV.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "make": "Honda",
+    "model": "Civic RS",
+    "year": 2024,
+    "price": 31900,
+    "mileage": 6100,
+    "color": "Graphite Gray",
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Honda_Civic_1.8_LX_2013.jpg",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Honda_Civic_1.8_LX_2013.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2002_Honda_Civic_(MY2002)_GLi_sedan_(2011-07-17)_01.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2013_Honda_Civic_(FB2_MY13)_VTi-L_sedan_(2018-10-01)_01.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Honda_Civic_Limousine_1.5_VTEC_Turbo_Executive_CVT_(X)_%E2%80%93_f_26122020.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "make": "Audi",
+    "model": "A5 Sportback",
+    "year": 2023,
+    "price": 46800,
+    "mileage": 7500,
+    "color": "Midnight Blue",
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Audi_A5_B10_DSC_7314.jpg",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Audi_A5_B10_DSC_7314.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Audi_A5_B10_DSC_7314.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Audi_A5_B10_DSC_7314.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Audi_A5_B10_DSC_7314.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "make": "Lexus",
+    "model": "ES 300h",
+    "year": 2024,
+    "price": 45100,
+    "mileage": 8000,
+    "color": "Crimson Red",
+    "fuel_type": "Hybrid",
+    "transmission": "Automatic",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2021_Lexus_ES300h_Premium.jpg",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2021_Lexus_ES300h_Premium.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2021_Lexus_ES300h_Premium_(Rear).jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2022_Lexus_ES_350_(GSZ10)_1X7A5794.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2022_Lexus_ES_350_(GSZ10)_1X7A0296.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "make": "Kia",
+    "model": "K5 GT-Line",
+    "year": 2024,
+    "price": 33400,
+    "mileage": 7100,
+    "color": "Obsidian Black",
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2010_Kia_Optima_SX_--_06-16-2010.jpg",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2010_Kia_Optima_SX_--_06-16-2010.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2018_Kia_Optima_2_CRDi_ISG_1.6_facelift_Front.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2016_Kia_Optima_SI_rear.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2022_Kia_K5_GT-Line_(DL3).jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "make": "Hyundai",
+    "model": "Sonata N Line",
+    "year": 2024,
+    "price": 33800,
+    "mileage": 6900,
+    "color": "Arctic Silver",
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hyundai_Sonata_N_Line_2.5_T-GDi_DN8_Hampton_Gray_Metallic_(4).jpg",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hyundai_Sonata_N_Line_2.5_T-GDi_DN8_Hampton_Gray_Metallic_(4).jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/95-98_Hyundai_Sonata.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hyundai_Sonata_2.0_GL_2005_(2).jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hyundai_Sonata_N_Line_2.5_T-GDi_DN8_Hampton_Gray_Metallic_(4).jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "make": "Nissan",
+    "model": "Altima SR",
+    "year": 2023,
+    "price": 29900,
+    "mileage": 9100,
+    "color": "Pearl White",
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2024_Nissan_Altima_SR,_front_left,_05-05-2025.jpg",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2024_Nissan_Altima_SR,_front_left,_05-05-2025.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2024_Nissan_Altima_SR,_front_left,_05-05-2025.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2024_Nissan_Altima_SR,_front_left,_05-05-2025.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2024_Nissan_Altima_SR,_front_left,_05-05-2025.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "make": "Mazda",
+    "model": "Mazda3 Turbo",
+    "year": 2024,
+    "price": 31200,
+    "mileage": 8600,
+    "color": "Graphite Gray",
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mazda3_SKYACTIV-G.jpg",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mazda3_SKYACTIV-G.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mazda3_SKYACTIV-G.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mazda3_SKYACTIV-G.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mazda3_SKYACTIV-G.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "make": "Volkswagen",
+    "model": "Passat R-Line",
+    "year": 2023,
+    "price": 35700,
+    "mileage": 9800,
+    "color": "Midnight Blue",
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Volkswagen_Passat_Variant_B9_IMG_1218.jpg",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Volkswagen_Passat_Variant_B9_IMG_1218.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/VOLKSWAGEN_PASSAT_PRO_(VOLKSWAGEN_PASSAT_B9)_China.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/VOLKSWAGEN_MAGOTAN_B9_China.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/VW_Passat_B7_1.4_TSI_BMT_Trendline_Islandgrau.JPG"
+    ]
+  },
+  {
+    "id": 12,
+    "make": "Skoda",
+    "model": "Superb Laurin & Klement",
+    "year": 2024,
+    "price": 37300,
+    "mileage": 7200,
+    "color": "Crimson Red",
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2018_Skoda_Superb_SE_L_Executive_TSi_1.4.jpg",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2018_Skoda_Superb_SE_L_Executive_TSi_1.4.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2018_Skoda_Superb_SE_L_Executive_TSi_1.4.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2018_Skoda_Superb_SE_L_Executive_TSi_1.4.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2018_Skoda_Superb_SE_L_Executive_TSi_1.4.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "make": "Peugeot",
+    "model": "508 GT",
+    "year": 2023,
+    "price": 36100,
+    "mileage": 8300,
+    "color": "Obsidian Black",
+    "fuel_type": "Hybrid",
+    "transmission": "Automatic",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2019_Peugeot_508_GT-Line_BlueHDi_1.5_(130_PS)_Front.jpg",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2019_Peugeot_508_GT-Line_BlueHDi_1.5_(130_PS)_Front.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2019_Peugeot_508_GT-Line_BlueHDi_1.5_(130_PS)_Front.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2019_Peugeot_508_GT-Line_BlueHDi_1.5_(130_PS)_Front.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2019_Peugeot_508_GT-Line_BlueHDi_1.5_(130_PS)_Front.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "make": "Tesla",
+    "model": "Model 3 Performance",
+    "year": 2024,
+    "price": 51900,
+    "mileage": 4400,
+    "color": "Arctic Silver",
+    "fuel_type": "Electric",
+    "transmission": "Automatic",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tesla_Model_3_(2023)_IMG_9488_(cropped).jpg",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tesla_Model_3_(2023)_IMG_9488_(cropped).jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tesla_Model_3_(2023)_Autofr%C3%BChling_Ulm_IMG_9324.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tesla_Model_3_Performance_(Facelift)_%E2%80%93_f_01012025.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tesla_Model_3_Performance_(Facelift)_%E2%80%93_h_01012025.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "make": "Genesis",
+    "model": "G70 Sport Prestige",
+    "year": 2024,
+    "price": 49200,
+    "mileage": 5100,
+    "color": "Pearl White",
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Genesis_G70_IK_PE_Verbier_White_(1)_(cropped).jpg",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Genesis_G70_IK_PE_Verbier_White_(1)_(cropped).jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Genesis_G70_Facelift_1X7A5728.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Genesis_G70_2.0T_Sport_IK_Platinum_Silver_(2)_(cropped).jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2019_Genesis_G70_3.3T,_front_12.26.19.jpg"
+    ]
+  }
+]

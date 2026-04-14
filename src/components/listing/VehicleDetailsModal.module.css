@@ -1,0 +1,265 @@
+.overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 140;
+	background: rgba(7, 7, 10, 0.72);
+	backdrop-filter: blur(4px);
+	display: grid;
+	place-items: center;
+	padding: var(--space-6);
+	opacity: 1;
+	transition: opacity 240ms ease, backdrop-filter 240ms ease;
+}
+
+.overlayClosing {
+	opacity: 0;
+	backdrop-filter: blur(0px);
+	pointer-events: none;
+}
+
+.modal {
+	position: relative;
+	width: min(920px, 100%);
+	max-height: min(86vh, 780px);
+	overflow: auto;
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-xl);
+	box-shadow: var(--shadow-elevated);
+	animation: modalIn 220ms ease;
+	transition: transform 240ms ease, opacity 240ms ease;
+}
+
+.modalClosing {
+	opacity: 0;
+	transform: translateY(10px) scale(0.985);
+}
+
+.closeButton {
+	position: absolute;
+	top: var(--space-3);
+	right: var(--space-3);
+	width: 34px;
+	height: 34px;
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-sm);
+	background: rgba(13, 13, 15, 0.75);
+	color: var(--color-text-primary);
+	font-size: 22px;
+	line-height: 1;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.media {
+	position: relative;
+	height: 320px;
+	background: var(--color-surface-raised);
+}
+
+.navArrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 36px;
+	height: 36px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 999px;
+	background: rgba(8, 8, 12, 0.65);
+	color: #fff;
+	font-size: 24px;
+	line-height: 1;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.prevArrow {
+	left: var(--space-3);
+}
+
+.nextArrow {
+	right: var(--space-3);
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.imagePlaceholder {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+	color: var(--color-border);
+}
+
+.imagePlaceholder svg {
+	width: 90px;
+	height: 90px;
+}
+
+.thumbRow {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: var(--space-2);
+	padding: var(--space-3) var(--space-3) 0;
+}
+
+.thumbButton {
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-sm);
+	overflow: hidden;
+	padding: 0;
+	background: var(--color-surface-raised);
+	height: 72px;
+	cursor: pointer;
+}
+
+.thumbButton img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.thumbActive {
+	border-color: var(--color-accent);
+}
+
+.content {
+	padding: var(--space-8);
+}
+
+.badgeRow {
+	display: flex;
+	gap: var(--space-2);
+	margin-bottom: var(--space-3);
+}
+
+.year {
+	margin: 0;
+	font-size: 12px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: var(--color-text-muted);
+}
+
+.title {
+	margin: var(--space-1) 0 0;
+	font-family: var(--font-display);
+	font-size: clamp(30px, 4vw, 44px);
+	line-height: 1.05;
+}
+
+.price {
+	margin: var(--space-3) 0 var(--space-5);
+	font-family: var(--font-display);
+	font-size: 30px;
+	font-weight: 700;
+	color: var(--color-accent);
+	line-height: 1;
+}
+
+.detailsGrid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: var(--space-4);
+}
+
+.detailLabel {
+	margin: 0;
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--color-text-muted);
+}
+
+.detailValue {
+	margin: 4px 0 0;
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--color-text-primary);
+}
+
+@keyframes modalIn {
+	from {
+		opacity: 0;
+		transform: translateY(8px) scale(0.99);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+@media (max-width: 768px) {
+	.overlay {
+		padding: var(--space-4);
+	}
+
+	.modal {
+		max-height: 90vh;
+	}
+
+	.media {
+		height: 220px;
+	}
+
+	.thumbRow {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.content {
+		padding: var(--space-6);
+	}
+
+	.detailsGrid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 480px) {
+	.overlay {
+		padding: 0;
+	}
+
+	.modal {
+		height: 100vh;
+		max-height: 100vh;
+		border-radius: 0;
+		border-left: 0;
+		border-right: 0;
+	}
+
+	.modalClosing {
+		transform: translateY(16px) scale(1);
+	}
+
+	.media {
+		height: 200px;
+	}
+
+	.navArrow {
+		width: 32px;
+		height: 32px;
+		font-size: 20px;
+	}
+
+	.thumbButton {
+		height: 64px;
+	}
+
+	.content {
+		padding: var(--space-5) var(--space-4) var(--space-6);
+	}
+
+	.title {
+		font-size: clamp(26px, 8vw, 34px);
+	}
+
+	.price {
+		font-size: 26px;
+	}
+}

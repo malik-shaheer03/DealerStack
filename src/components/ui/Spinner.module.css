@@ -1,0 +1,27 @@
+.spinnerWrap {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.spinner {
+  display: block;
+  animation: spin 0.9s linear infinite;
+}
+
+.track {
+  stroke: var(--color-border);
+}
+
+.arc {
+  stroke: var(--color-accent);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
