@@ -71,8 +71,6 @@ During normalization, the app:
 - maps curated fallback images,
 - and generates an SVG placeholder image when needed.
 
-> Note: `.env.example` includes `VITE_API_NINJAS_KEY` for optional external API extensions, but current default flow works without it.
-
 ---
 
 ## 🧱 Project Structure
